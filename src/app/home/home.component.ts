@@ -25,4 +25,8 @@ export class HomeComponent implements OnInit {
 
     }
 
+    onTitleChanged(newTitle) {
+        console.info("Got a new title " + newTitle);
+    }
+
 }

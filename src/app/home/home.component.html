@@ -1,4 +1,3 @@
 <div *ngFor="let x of posts">
-  <h2>{{x.title}}</h2>
-  <p>{{x.body}}</p>
+    <app-posteditor [post]="x" (titleChanged)="onTitleChanged($event)"></app-posteditor>
 </div>
