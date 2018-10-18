@@ -9,6 +9,8 @@ import { Post } from '../post';
 export class HomeComponent implements OnInit {
 
     posts: Post[];
+    testnativestring: string;
+    numberChanges: number = 0;
 
     constructor() { }
 
@@ -23,10 +25,17 @@ export class HomeComponent implements OnInit {
             this.posts.push(x);
         }
 
+        this.testnativestring = "<h1>This is a simple test</h1>"
+
     }
 
     onTitleChanged(newTitle) {
         console.info("Got a new title " + newTitle);
+    }
+
+    changeText() {
+        this.numberChanges++;
+        this.testnativestring = "<h2>This is change number ["+ this.numberChanges +"]</h2>"
     }
 
 }

@@ -4,12 +4,14 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PosteditorComponent } from './posteditor/posteditor.component';
+import { DirecthtmlComponent } from './directhtml/directhtml.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    PosteditorComponent
+    PosteditorComponent,
+    DirecthtmlComponent
   ],
   imports: [
     BrowserModule
